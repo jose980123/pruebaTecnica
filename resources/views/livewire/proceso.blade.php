@@ -1,4 +1,5 @@
 <div>
+    {{-- Este for nos ayudara a recorer el array y nos permitira mostrar toda la informacion --}}
     @foreach ($acciones as $accion )
             <div class="bg-blue-500 m-3 p-5 cursor-pointer rounded-lg shadow-lg text-center hover:bg-blue-800 active:bg-red-800">
                 <a href="{{ route('turno.index') }}" class="text-white font-extrabold">{{ $accion->nombre}}</a>
